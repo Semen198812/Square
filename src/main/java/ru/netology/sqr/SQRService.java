@@ -5,15 +5,14 @@ public class SQRService {
         int count = 0;
 
         for (int i = 10; i <= 99; i++) {
-            if (i * i >= minimum) {
-                if (i * i <= maximum) {
-                    count++;
+            if (i * i >= minimum && i * i <= maximum) {
+                count++;
 
-                    System.out.println("Колличество квадратов:" + count);
-                }
-
+                System.out.println("Колличество квадратов:" + count);
             }
+
         }
+
         return count;
     }
 }
